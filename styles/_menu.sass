@@ -1,0 +1,25 @@
+.menu
+  width: 100%
+  max-width: 1200px
+  margin: 1rem auto
+  list-style-type: none
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+  li > a
+    color: #000000
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 18px
+  li > a:after
+    display: block
+    content: ""
+    height: 3px
+    width: 0%
+    background-color: #1468bd
+    transition: width 0.4s ease-in-out
+  li > a:hover:after,
+  li > a:focus:after
+    width: 100%

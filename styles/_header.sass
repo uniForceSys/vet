@@ -1,0 +1,88 @@
+.header
+    width: 100%
+    max-width: 1920px
+    margin: auto
+    padding: 0.5rem
+    display: grid
+    grid-template-columns: 25% 20% 20%
+    grid-template-rows: auto
+    grid-template-areas: "clinic . . . social . contacts"
+    border-bottom: 2px solid #c7c7c7
+    &-clinic
+        width: 100%
+        max-width: 450px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        grid-area: clinic
+        &-logo
+            width: 90px
+        &-tagline
+            font-size: 17px
+            line-height: 22px
+            text-align: center
+    &-social
+        width: 100%
+        max-width: 250px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content:
+        grid-area: social
+        #instagram, #vk, #twitter
+            width: 60px
+    &-contacts
+        width: 100%
+        max-width: 400px
+        margin: auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+        grid-area: contacts
+        a
+            font-size: 17px
+            color: #000000
+
+#a1, #mts, #work, #email
+    position: relative
+    width: 200px
+    padding-bottom: 0.7rem
+
+#a1::before
+    content: url('/img/header/a1.svg')
+    position: absolute
+    top: -0.4rem
+    left: -1.9rem
+    width: 10px
+    height: 10px
+    transform: scale(0.4)
+
+#mts::before
+    content: url('/img/header/mts.svg')
+    position: absolute
+    top: -1.6rem
+    left: -3.4rem
+    width: 10px
+    height: 10px
+    transform: scale(0.16)
+
+#work::before
+    content: url('/img/header/phone.svg')
+    position: absolute
+    top: -1.7rem
+    left: -4rem
+    width: 10px
+    height: 10px
+    transform: scale(0.17)
+
+#email::before
+    content: url('/img/header/email.svg')
+    position: absolute
+    top: -1.7rem
+    left: -4rem
+    width: 10px
+    height: 10px
+    transform: scale(0.17)
